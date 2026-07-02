@@ -451,6 +451,66 @@ export const opencodeProviderPresets: OpenCodeProviderPreset[] = [
     },
   },
   {
+    name: "Astraflow",
+    websiteUrl: "https://astraflow.ucloud-global.com",
+    apiKeyUrl: "https://astraflow.ucloud-global.com",
+    settingsConfig: {
+      npm: "@ai-sdk/openai-compatible",
+      name: "Astraflow",
+      options: {
+        baseURL: "https://api.umodelverse.ai/v1",
+        apiKey: "",
+        setCacheKey: true,
+      },
+      models: {
+        "gpt-5.5": { name: "GPT-5.5" },
+        "deepseek-v4-pro": { name: "DeepSeek V4 Pro" },
+        "o4-mini": { name: "O4 Mini" },
+        "qwen3-embedding-8b": { name: "Qwen3 Embedding 8B" },
+      },
+    },
+    category: "aggregator",
+    icon: "ucloud",
+    iconColor: "#0052D9",
+    templateValues: {
+      apiKey: {
+        label: "API Key",
+        placeholder: "",
+        editorValue: "",
+      },
+    },
+  },
+  {
+    name: "Astraflow CN",
+    websiteUrl: "https://astraflow.ucloud.cn",
+    apiKeyUrl: "https://astraflow.ucloud.cn",
+    settingsConfig: {
+      npm: "@ai-sdk/openai-compatible",
+      name: "Astraflow CN",
+      options: {
+        baseURL: "https://api.modelverse.cn/v1",
+        apiKey: "",
+        setCacheKey: true,
+      },
+      models: {
+        "deepseek-v4-pro": { name: "DeepSeek V4 Pro" },
+        "qwen3.7-max": { name: "Qwen3.7 Max" },
+        "o4-mini": { name: "O4 Mini" },
+        "qwen3-embedding-8b": { name: "Qwen3 Embedding 8B" },
+      },
+    },
+    category: "aggregator",
+    icon: "ucloud",
+    iconColor: "#0052D9",
+    templateValues: {
+      apiKey: {
+        label: "API Key",
+        placeholder: "",
+        editorValue: "",
+      },
+    },
+  },
+  {
     name: "Code0",
     websiteUrl: "https://code0.ai",
     apiKeyUrl: "https://code0.ai?source=ccswitch",
